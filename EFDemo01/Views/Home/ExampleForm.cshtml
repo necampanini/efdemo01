@@ -1,0 +1,33 @@
+﻿@model EFDemo01.Models.Event
+
+@{
+    ViewBag.Title = "ExampleForm";
+}
+
+<h4>These 2 inputs will create an 'event' (see models folder for that class)</h4>
+
+@* This helper just create a <form></form>,
+    that will point at the ExampleForm action in the Home Controller *@
+@using (Html.BeginForm("ExampleForm", "Home", FormMethod.Post))
+{
+    //These @Html helpers just create normal html, but cut down
+    //on repeated code. 'model' refers to the whole views Model, defined on line 1
+    @Html.LabelFor(model => model.EventName)
+
+    //the "new { }" object are just extra things we want to add to the html that is generated
+    //in this case, we want to limit the length of the input to the database tables limit
+
+    @Html.TextBoxFor(model => model.EventName, new { @maxLength = "50"})
+
+    @Html.LabelFor(model => model.EventDescription)
+    @Html.TextBoxFor(model => model.EventDescription, new { @maxLength = "200" })
+
+    <br />
+
+    <input type="submit" value="Submit new event" />
+}
+
+
+<hr />
+
+@Html.ActionLink("SEE LIST OF EVENTS", "ExampleList")

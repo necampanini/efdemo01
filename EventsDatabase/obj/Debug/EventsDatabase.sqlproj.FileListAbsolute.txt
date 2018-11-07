@@ -1,0 +1,6 @@
+C:\Projects\Demos\EFDemo01\EventsDatabase\bin\Debug\EventsDatabase.dacpac
+C:\Projects\Demos\EFDemo01\EventsDatabase\bin\Debug\EventsDatabase.dll
+C:\Projects\Demos\EFDemo01\EventsDatabase\bin\Debug\EventsDatabase.pdb
+C:\Projects\Demos\EFDemo01\EventsDatabase\obj\Debug\EventsDatabase.sqlprojAssemblyReference.cache
+C:\Projects\Demos\EFDemo01\EventsDatabase\obj\Debug\EventsDatabase.dll
+C:\Projects\Demos\EFDemo01\EventsDatabase\obj\Debug\EventsDatabase.pdb
